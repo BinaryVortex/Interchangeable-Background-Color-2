@@ -2,126 +2,68 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     background: rgb(28, 28, 35);
-  }
-  
-  body.purple {
-    background-color: purple;
-  }
-  
-  body.blue {
-    background-color: blue;
-  }
-  
-  body.red {
-    background-color: red;
-  }
-  
-  body.green {
-    background-color: green;
-  }
-  
-  body.yellow {
-    background-color: yellow;
-  }
-  
-  body.teal {
-    background-color: teal;
-  }
-  
-  body.orange {
-    background-color: orange;
-  }
-  
-  body.pink {
-    background-color: pink;
-  }
-  
-  body.cyan {
-    background-color: cyan;
-  }
-  
-  body.lime {
-    background-color: lime;
-  }
-  
-  body.indigo {
-    background-color: indigo;
-  }
-  
-  body.brown {
-    background-color: brown;
-  }
-  
-  .content-container {
+    transition: background-color 0.5s ease;
+}
+
+.content-container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .btn {
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
     padding: 10px 20px;
     border: none;
     color: #fff;
     border: 2px solid white;
-    width: 120px;
-    height: 100px;
-    margin: 20px;
+    width: 100px;
+    height: 60px;
+    margin: 10px;
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
-  }
-  
-  .purple {
-    background-color: purple;
-  }
-  
-  .blue {
-    background-color: blue;
-  }
-  
-  .red {
-    background-color: red;
-  }
-  
-  .green {
-    background-color: green;
-  }
-  
-  .yellow {
-    background-color: yellow;
-  }
-  
-  .teal {
-    background-color: teal;
-  }
-  
-  .orange {
-    background-color: orange;
-  }
-  
-  .pink {
-    background-color: pink;
-  }
-  
-  .cyan {
-    background-color: cyan;
-  }
-  
-  .lime {
-    background-color: lime;
-  }
-  
-  .indigo {
-    background-color: indigo;
-  }
-  
-  .brown {
-    background-color: brown;
-  }
-  
+    transition: transform 0.2s ease, background-color 0.5s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Color Classes */
+.purple { background-color: purple; }
+.blue { background-color: blue; }
+.red { background-color: red; }
+.green { background-color: green; }
+.yellow { background-color: yellow; color: black; }
+.teal { background-color: teal; }
+.orange { background-color: orange; }
+.pink { background-color: pink; color: black; }
+.brown { background-color: brown; }
+.cyan { background-color: cyan; }
+.magenta { background-color: magenta; }
+.lime { background-color: lime; color: black; }
+.indigo { background-color: indigo; }
+.gold { background-color: gold; color: black; }
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .btn {
+        width: 80px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
